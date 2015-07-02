@@ -26,7 +26,7 @@ namespace Kino
 {
     [ExecuteInEditMode]
     [RequireComponent(typeof(Camera))]
-    [AddComponentMenu("Kino Image Effects/Kino Fog")]
+    [AddComponentMenu("Kino Image Effects/KinoFog")]
     public class KinoFog : MonoBehaviour
     {
         #region Public Properties
@@ -154,10 +154,10 @@ namespace Kino
             var v_s = v_tl.magnitude * camFar / camNear;
 
             // Draw screen quad.
+            RenderTexture.active = destination;
+
             _material.SetTexture("_MainTex", source);
             _material.SetPass(0);
-
-            RenderTexture.active = destination;
 
             GL.PushMatrix();
             GL.LoadOrtho();
