@@ -26,8 +26,8 @@ using UnityEditor;
 namespace Kino
 {
     [CanEditMultipleObjects]
-    [CustomEditor(typeof(KinoFog))]
-    public class KinoFogEditor : Editor
+    [CustomEditor(typeof(Fog))]
+    public class FogEditor : Editor
     {
         SerializedProperty _startDistance;
         SerializedProperty _useRadialDistance;

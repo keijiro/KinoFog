@@ -26,8 +26,8 @@ namespace Kino
 {
     [ExecuteInEditMode]
     [RequireComponent(typeof(Camera))]
-    [AddComponentMenu("Kino Image Effects/KinoFog")]
-    public class KinoFog : MonoBehaviour
+    [AddComponentMenu("Kino Image Effects/Fog")]
+    public class Fog : MonoBehaviour
     {
         #region Public Properties
 
